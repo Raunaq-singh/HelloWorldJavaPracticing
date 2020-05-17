@@ -15,6 +15,31 @@
         $("#result").html(data)
       })
     }
+    function apiCall2() {
+      $("#result2").html('Loading...')
+      $.get("/getInvoiceInfo", function(data){
+        $("#result2").html(data)
+      })
+    }
+    function apiCall3() {
+      $("#result3").html('Loading...')
+      $.get("/getPaymentInfo", function(data){
+        $("#result3").html(data)
+      })
+    }
+    function apiCall4() {
+      $("#result4").html('Loading...')
+      $.get("/addInvoice", function(data){
+        $("#result4").html(data)
+      })
+    }
+    function apiCall5() {
+      $("#result5").html('Loading...')
+      $.get("/addCustomer", function(data){
+        $("#result5").html(data)
+      })
+    }
+
 
   </script>
 </head>
@@ -26,6 +51,18 @@
     <button onclick="apiCall()">QuickBooks CompanyInfoAPI Call</button>
     <br /><br />
     <div><code id="result"></code></div>
-    </div>
+    <button onclick="apiCall2()">QuickBooks InvoiceInfoAPI Call</button>
+    <br /><br />
+    <div><code id="result2"></code></div>
+    <button onclick="apiCall3()">QuickBooks PaymentInfoAPI Call</button>
+    <br /><br />
+    <div><code id="result3"></code></div>
+    <button onclick="apiCall4()">Add a random Invoice</button>
+    <br /><br />
+    <div><code id="result4"></code></div>
+    <button onclick="apiCall5()">Add a random Customer</button>
+    <br /><br />
+    <div><code id="result5"></code></div>
+  </div>
 </body>
 </html>

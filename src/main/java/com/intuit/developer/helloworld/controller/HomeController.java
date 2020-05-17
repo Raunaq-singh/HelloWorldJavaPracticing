@@ -45,7 +45,7 @@ public class HomeController {
 	 */
 	@RequestMapping("/connectToQuickbooks")
 	public View connectToQuickbooks(HttpSession session) {
-		logger.info("inside connectToQuickbooks ");
+		logger.info("Inside connectToQuickbooks ");
 		OAuth2Config oauth2Config = factory.getOAuth2Config();
 		
 		String redirectUri = factory.getPropertyValue("OAuth2AppRedirectUri"); 
