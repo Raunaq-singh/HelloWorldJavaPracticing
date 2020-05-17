@@ -1,4 +1,5 @@
 [![Sample Banner](views/Sample.png)][ss1]
+I've added some basic API requests to the helloworld java app existing at Inutuit developer portal. The following is the readme file present at the git hub repo of the original hello world app.
 
 # HelloWorld-Java
 
